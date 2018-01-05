@@ -1,0 +1,16 @@
+README file for this project:
+The program uses OpenCV 3.3.1 and C++11 compiler make sure these are setup before running the makefile.
+
+Steps to run the program:
+1) Run the makefile.
+2) The executable file and the object files will be created
+3) Run the project executable using the "./project" command
+4) The Intrinsic camera values are stored in "camera_params.xml". They are also printed out in the terminal output.
+5) In the "camera_params.xml", H12 represents the homography matrix mapping the points from image 2 to image 1, H23 maps image 3 to image 2 and so on.
+6) The homography matrices that relate the adjacent right image to the left image are stored in "homography_matrices.xml".
+7) The homography matrices that are aligned with respect to the first image are stored in "related_homography_matrices.xml". H12 represents the homography matrix mapping the points from image 2 to image 1, H13 maps image 3 to image 1 and so on.
+8) The undistorted images are stored in the undistorted_images directory.
+9) The warped images are stored in the warped_images directory.
+10) The super image created is "super_image_1.jpg". (Note: the program waits for key input by the user after displaying the super image to proceed).
+11) The rotated super image is "rotated_super_image_1.jpg". (Note: the program waits for key input by the user after displaying the rotated super image to proceed).
+12) Thanks for grading.
